@@ -17,13 +17,17 @@ public class Main {
 
 //        System.out.println(employeeList.get(3));
 //        System.out.println(employeeList.size());
-        employeeList.add(2,new Employee("Michal", "Janowski",9870));
+        employeeList.add(2, new Employee("Michal", "Janowski", 9870));
 //        employeeList.forEach(System.out::println);
 
-        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
-        for (Employee employee: employeeArray){
-            System.out.println(employee);
-        }
+//        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
+//        for (Employee employee: employeeArray){
+//            System.out.println(employee);
+//        }
+        System.out.println(employeeList.contains(new Employee("Jan", "Kowalski", 789)));
+        System.out.println(employeeList.indexOf(new Employee("Jan", "Kowalski", 789)));
+//        employeeList.remove(2);
+        employeeList.forEach(employee -> System.out.println(employee));
 
     }
 }
